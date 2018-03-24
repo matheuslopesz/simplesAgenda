@@ -31,3 +31,5 @@
 <br>
 
 <%= link_to 'New Contact', new_contact_path %>
+<% index_to_partial = "Essa variável foi da view para a partial" %>
+<%= render :partial => "/contacts/shared/teste", locals: { partialVariable: index_to_partial} %>
